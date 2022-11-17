@@ -21,16 +21,8 @@ function App() {
       <h1>Hello React!</h1>
       {/* <Componente1 /> */}
       <div className="container-product">
-        <Product 
-          img={primaCard.img} 
-          prezzo={primaCard.prezzo} 
-          name={primaCard.name} 
-          prezzoFinale={primaCard.prezzoFinale}/>
-        <Product 
-          img={secondaCard.img} 
-          prezzo={secondaCard.prezzo} 
-          name={secondaCard.name} 
-          prezzoFinale={secondaCard.prezzoFinale}/>
+        <Product {...primaCard}/>
+        <Product {...secondaCard}/>
       </div>
     </div>
   );
